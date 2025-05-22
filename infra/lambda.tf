@@ -27,7 +27,7 @@ resource "aws_lambda_function" "dmu_template_service" {
   function_name = "dmu-template-service"
   s3_bucket     = var.s3_bucket_name
   s3_key        = var.lambda_s3_key
-  handler       = "com.khabaznia.dmu_templates_service.JavaStreamLambdaHandler::handleRequest"
+  handler       = "com.khabaznia.dmu_templates_service.SimpleLambdaHandler::handleRequest"
   runtime       = "java21"
   memory_size   = 1024
   timeout       = 29

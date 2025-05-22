@@ -21,11 +21,11 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
 	implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
 	implementation 'org.apache.poi:poi-ooxml:5.4.0'
-	implementation 'com.amazonaws.serverless:aws-serverless-java-container-springboot3:2.0.0'
+	implementation 'dev.baecher.multipart:streaming-multipart-parser:0.10.0'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
