@@ -37,6 +37,7 @@ resource "aws_lambda_function" "dmu_template_service" {
       JAVA_TOOL_OPTIONS = "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
     }
   }
+  source_code_hash = filebase64sha256("../build/libs/dmu-templates-service-0.0.1-SNAPSHOT-all.jar")
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_basic" {

@@ -18,13 +18,16 @@ public class JavaStreamLambdaHandler implements RequestStreamHandler {
 
     static {
         try {
+            System.setProperty("spring.main.web-application-type", "servlet");
+            System.setProperty("spring.main.application-context-class",
+                    "org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext");
+
             handler = new SpringBootProxyHandlerBuilder<AwsProxyRequest>()
                     .defaultProxy()
                     .asyncInit()
                     .springBootApplication(DmuTemplatesServiceApplication.class)
                     .build();
         } catch (ContainerInitializationException e) {
-            // If we fail here, we rethrow to force a cold start retry
             throw new RuntimeException("Could not initialize Spring Boot application", e);
         }
     }
