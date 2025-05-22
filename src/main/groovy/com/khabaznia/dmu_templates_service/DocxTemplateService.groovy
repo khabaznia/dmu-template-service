@@ -1,7 +1,6 @@
 package com.khabaznia.dmu_templates_service
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument
-import org.apache.poi.xwpf.usermodel.XWPFParagraph
 import org.apache.poi.xwpf.usermodel.XWPFTable
 import org.springframework.stereotype.Service
 import org.springframework.web.multipart.MultipartFile
