@@ -1,0 +1,61 @@
+# Java & Spring Boot
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Test output
+/test-output/
+
+# Local config
+*.local
+
+# Others
+*.swp
+*.swo
+
+# Ignore generated tasks
+/tasks/*.md
+
+# Dependency directories
+node_modules/
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Task files
+tasks.json
+tasks/ 
